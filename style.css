@@ -1,0 +1,475 @@
+@font-face {
+    font-family: Netflix Sans;
+    src: url('NetflixSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Netflix Sans2;
+    src: url('NetflixSansBlack.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Netflix Sans3;
+    src: url('NetflixSansBold.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Images/bg.jpg");
+    height: 100vh;
+    background-size: max(1900px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: '0 0 200px rgba(0,0,0,0.9) inset';
+    border: 'none';
+    height: '700px';
+    width: '700px';
+}
+
+.main .box {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.73;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 77vw;
+    margin: auto;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: Netflix Sans;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: Netflix Sans2;
+    /* font-weight: 900; */
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+    font-family: Netflix Sans3;
+    font-size: 24px;
+    /* font-weight: 100; */
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-family: Netflix Sans3;
+    font-size: 20px;
+    /* font-weight: 400; */
+    text-align: center;
+}
+
+.seperation {
+    height: 8px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    font-family: Netflix Sans2;
+    font-size: 16px;
+    padding: 4px 18px 6px 13px;
+    font-weight: bold;
+    background-color: rgba(24, 24, 24, 0.403);
+    color: white;
+    border-style: ridge;
+    border-radius: 5px;
+
+    /* border: 2px solid white; */
+}
+
+
+.btn-red:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: rgb(193, 17, 25);
+}
+
+.btn-red {
+    font-family: Netflix Sans3;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    padding: 11px 16px 11px 25px;
+    font-size: 23px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+
+.btn-red-sn:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: rgb(193, 17, 25);
+}
+
+.btn-red-sn {
+    font-family: Netflix Sans2;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border-style: none;
+    padding: 0px 17px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main input {
+    color: white;
+    font-family: Netflix Sans3;
+    font-weight: 700;
+    padding: 15px 146px 15px 13px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(24, 24, 24, 0.403);
+    border-style: ridge;
+}
+
+.hero-buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.rt-but {
+    display: flex;
+    gap: 18px;
+
+}
+
+.btn .trans {
+    padding: 0px 5px 0 0;
+}
+
+.btn .downarr {
+    padding: 0px 0 0 7px;
+}
+
+
+.hero-buttons .get-std {
+    display: flex;
+}
+
+.first {
+    /* flex-wrap: wrap; */
+    padding-top: 80px;
+    margin: 0px 166px 80px 175px;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    /* margin: auto; */
+    color: white;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+.secImg img {
+    position: relative;
+    z-index: 10;
+    width: 586px;
+}
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg video {
+    height: fit-content;
+    position: absolute;
+    top: 76px;
+    right: 84px;
+    width: 422px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-family: Netflix Sans3;
+}
+
+
+.first>div :nth-child(2) {
+    padding-top: 16px;
+    font-size: 24px;
+    font-family: Netflix Sans3;
+}
+
+
+.third .secImg video {
+    height: fit-content;
+    position: absolute;
+    top: 38px;
+    right: 112px;
+    width: 362px;
+}
+
+.faq {
+    font-family: Netflix Sans2;
+    background-color: black;
+    color: white;
+    padding: 34px;
+    font-size: 24px;
+}
+
+.faqbox:hover {
+    background-color: #414141
+}
+
+.faqbox {
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    font-family: Netflix Sans3;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 25px;
+    max-width: 75vw;
+    margin: 19px auto -8px auto;
+    cursor: pointer;
+
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 80vw;
+    margin: auto;
+    padding: 14px;
+}
+
+
+
+.footer {
+    margin-bottom: 30px;
+    font-family: Netflix Sans;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+
+
+.footer-item {
+    font-family: Netflix Sans;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer a {
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+footer .ques {
+    font-family: Netflix Sans3;
+    padding: 34px 0;
+}
+
+.faq .last-line {
+    font-size: 20px;
+    font-family: Netflix Sans3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 23px;
+    padding: 61px 30px 15px 30px;
+}
+
+.faq .last-but {
+    color: white;
+    font-family: Netflix Sans3;
+    font-weight: 700;
+    padding: 19px 146px 19px 13px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(24, 24, 24, 0.403);
+    border-style: ridge;
+
+}
+
+section .great {
+    margin-bottom: 30px;
+}
+
+
+
+.btn-red-last:hover {
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: rgb(193, 17, 25);
+}
+
+.btn-red-last {
+    font-family: Netflix Sans3;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    padding: 14px 16px 14px 25px;
+    font-size: 23px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.ft-trans {
+    font-family: Netflix Sans2;
+    font-size: 15px;
+    padding: 4px 18px 6px 13px;
+    font-weight: bold;
+    background-color: rgba(24, 24, 24, 0.403);
+    color: white;
+    border-style: ridge;
+    border-radius: 5px;
+}
+
+footer .con {
+    font-family: Netflix Sans2;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 22px 0 50px 0;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .btn-red-sn {
+        font-size: 11px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        top: 29px;
+        right: 44px;
+        width: 216px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .first>div :first-child {
+        font-size: 32px;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .first{
+        margin: 0px 16px 80px 16px;
+        text-align: center;
+    }
+
+    .third .secImg video {
+        top: 16px;
+        right: 59px;
+        width: 194px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+    }
+
+    footer{
+        max-width: 90vw;
+    }
+
+}
+
